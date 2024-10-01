@@ -1,0 +1,9 @@
+def rbin(lst, left, val):
+    lst.append(val)
+    left -= 1
+    if left == 0:
+        print(lst)
+    rbin(lst, left, 0)
+    rbin(lst, left, 1)
+
+rbin([], 3, 1)
