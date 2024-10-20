@@ -1,0 +1,9 @@
+:sem_vosem 78
+:pamella x x+"pamella"
+:tipa_summa a b a+b
+:hahaha a b c d ("78").join([a,b,c,d])
+sem_vosem
+pamella "chto takoe "
+tipa_summa 7 8
+hahaha "ha" "ha" "ha" "ha"
+quit "functions: {}, strings: {}"
