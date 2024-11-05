@@ -1,16 +1,12 @@
-o = Omnibus()
-o.a = 1
-o.a = 2
-del o.a
-del o.a
-del o.a
-o.a = 1
-del o.a
-o.a = 1
-o.a = 2
-print(o.a)
-del o.a
-del o.a
-o.a = 1
-del o.a
-print(o.a)
+a, b, c = Omnibus(), Omnibus(), Omnibus()
+
+a.i = a.j = a.k = True
+b.i = b.j = b.k = False
+c.i = c.j = c.k = True
+
+print(a.i, a.j, a.k, b.i, b.j, b.k, c.i, c.j, c.k)
+del a.i, b.j, c.k
+print(c.i, a.j, b.k)
+del b.i, c.j, a.k
+print(c.i, a.j, b.k)
+

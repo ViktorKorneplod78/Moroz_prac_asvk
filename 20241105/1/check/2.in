@@ -1,4 +1,12 @@
-o1, o2 = Omnibus(), Omnibus()
-o1.a = 1
-del o2.a
-print(o1.a, o2.a)
+a, b, c = Omnibus(), Omnibus(), Omnibus()
+
+a.i = a.j = a.k = True
+b.i = b.j = b.k = False
+c.i = c.j = c.k = True
+
+print(a.i, a.j, a.k, b.i, b.j, b.k, c.i, c.j, c.k)
+del a.i, b.j, c.k
+print(c.i, a.j, b.k)
+del a.i, b.j, c.k
+print(c.i, a.j, b.k)
+

@@ -1,5 +1,9 @@
-o = Omnibus()
-o.a = 1
-del o.a
-del o.a
-print(o.a, o.b)
+a, b, c = Omnibus(), Omnibus(), Omnibus()
+
+a.q = a.w = a.e = True
+b.e = b.r = b.t = False
+c.t = c.y = int
+print(a.q, a.w, a.e, b.e, b.r, b.t, c.t, c.y, c.m)
+del a.e
+print(a.q, a.w, b.e, b.r, b.t, c.t, c.y)
+
