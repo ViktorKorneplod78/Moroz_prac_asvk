@@ -1,0 +1,5 @@
+o = Omnibus()
+o.a = 1
+del o.a
+del o.a
+print(o.a, o.b)
