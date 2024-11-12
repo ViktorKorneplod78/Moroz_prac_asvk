@@ -1,3 +1,5 @@
+#наследование
+
 class A:
     v = 1
 
@@ -6,8 +8,8 @@ class B(A):
 
 b = B()
 b.v = 3
-print(b.v)
+print(b.v) # 3
 del b.v
-print(b.v)
+print(b.v) # 2
 del B.v
-print(b.v)
+print(b.v) # 1

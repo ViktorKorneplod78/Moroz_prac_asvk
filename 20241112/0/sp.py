@@ -4,8 +4,8 @@ class A:
 
 class B(A):
     def __str__(self):
-        return f"{super().__str__()}:B"
+        return f"{super().__str__()} : B"
 
 class C(B):
     def __str__(self):
-        return f"{super().__str__()}:C"
+        return f"{super().__str__()} : C"
