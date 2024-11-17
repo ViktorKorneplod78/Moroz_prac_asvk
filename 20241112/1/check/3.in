@@ -1,0 +1,2 @@
+a = DivStr("123")
+print(* a // 4)

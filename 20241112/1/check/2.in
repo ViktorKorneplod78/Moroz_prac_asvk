@@ -1,0 +1,3 @@
+a = DivStr()
+a += "78"
+print(a % 3)
