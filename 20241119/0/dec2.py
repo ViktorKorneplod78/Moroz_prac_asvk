@@ -2,13 +2,12 @@ def istype(typ):
     def deco(fun):
         def newfun(*args):
             if not all(isinstance(arg, typ) for arg in args):
-                raise TypeError(f"not all {typ}")
+                raise TypeError
             return fun(*args)
         return newfun
     return deco
 
-@istype(int)
-def fun(a,b):
-    return a*2+b
+@istype
+def add(x, y, z):
+    return x + y + z
 
-print(fun(2,3))

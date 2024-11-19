@@ -6,17 +6,15 @@ def dumper(f):
         return res
     return newfun
 
-def isint(f):
-    def a(*args):
-        for arg in args:
-            if type(arg) != int:
-                raise TypeError
-        return f(*args)
-    return a
-
 @dumper
-@isint
 def fun(a,b):
     return a*2+b
 
-print(fun("b",3))
+@dumper
+def isint(*args):
+    for i in args:
+        if type(i) != type(1):
+            raise TypeError
+    return True
+
+print(isint(2,'sdfs'))
