@@ -1,0 +1,5 @@
+class chto:
+    c = Num()
+
+goida = chto()
+print(goida.c)

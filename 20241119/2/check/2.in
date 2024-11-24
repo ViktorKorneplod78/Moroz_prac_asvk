@@ -1,0 +1,6 @@
+class Goida:
+    g = Num()
+
+c = Goida()
+c.g = []
+print(c.g)

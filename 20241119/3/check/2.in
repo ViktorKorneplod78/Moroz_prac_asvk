@@ -1,0 +1,16 @@
+v = Vowel()
+
+try:
+    v.answer = 78
+except:
+    print("Can't write to answer attribute")
+
+try:
+    print(v.a)
+except:
+    print("Can't get v.a attribute")
+
+try:
+    v.goida = "ZV"
+except:
+    print("Can't write to v.goida attribute")

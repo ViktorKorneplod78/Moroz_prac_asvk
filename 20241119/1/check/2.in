@@ -1,0 +1,17 @@
+@objcount
+class Goida:
+    def __init__(self, goida_n):
+        self.n = goida_n
+        for i in range(self.n):
+            print("GOIDA")
+    def __del__(self):
+        for i in range(self.n):
+            print("ANTIGOIDA")
+
+a = Goida(2)
+b = Goida(3)
+print(Goida.counter)
+del a
+print(Goida.counter)
+del b
+print(Goida.counter)
