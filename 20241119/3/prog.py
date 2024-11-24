@@ -5,8 +5,7 @@ class Vowel:
     def __init__(self, **kwargs):
         super().__setattr__("full", False)
         for key, val in kwargs.items():
-            if key in "aeiouy":
-                setattr(self, key, val)
+            setattr(self, key, val)
         self.check_full()
 
     def __str__(self):
