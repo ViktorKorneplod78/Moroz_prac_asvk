@@ -1,0 +1,4 @@
+	store 1 a
+	store 2 b
+ifeq a b loop
+out a

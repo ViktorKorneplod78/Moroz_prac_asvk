@@ -1,4 +1,10 @@
-class C(metaclass=dump):
-    pass
+class D(metaclass=dump):
+    def __init__(self, val):
+        self.val = [val]
 
-c = C()
+    def add(self, other):
+        return self.val + [other]
+
+c = D(1)
+print(c.add(2))
+print(c.add(3))

@@ -1,5 +1,10 @@
-class C(metaclass=dump):
-    def __init__(self):
-        print("Goida")
+class D(metaclass=dump):
+    def __init__(self, val):
+        self.val = val
 
-c = C()
+    def sub(self, other):
+        return self.val - other
+
+c = D(1)
+print(c.sub(2))
+print(c.sub(3))
