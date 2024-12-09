@@ -1,0 +1,5 @@
+class C(metaclass=dump):
+    def __init__(self):
+        print("Goida")
+
+c = C()
